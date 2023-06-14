@@ -22,7 +22,7 @@ The web application utilizes the following technologies in its stack:
 The web application includes the following main features:
 
 1. Create user - Allows the creation of new user profiles.
-2. Get user - Retrieves user information based on specified criteria.
+2. Get user - Retrieves user information from database.
 3. Update user - Updates user details such as name, email, or other relevant information.
 4. Delete user - Deletes a user profile from the system.
 
