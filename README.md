@@ -32,7 +32,7 @@ The application is deployed and can be accessed at: [https://proses-web-technolo
 
 ### How to Run Locally
 
-To run the Seat Reservation System locally, follow these steps:
+To run the application locally, follow these steps:
 
 1. Clone or download the code repository.
 2. Open the project folder in your preferred terminal or code editor, such as Visual Studio Code.
