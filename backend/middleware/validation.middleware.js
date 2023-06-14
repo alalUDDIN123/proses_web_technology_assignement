@@ -1,9 +1,9 @@
 //validating the input field
 
 const validator = (request, response, next) => {
-    const { username, mobile, email, address, profilepic } = request.body;
+    const { username, mobile, email, address} = request.body;
 
-    if (!username || !mobile || !email || !address || !profilepic) {
+    if (!username || !mobile || !email || !address) {
         return response.status(500).json({ error: "All fields are required" })
     }
 

@@ -23,11 +23,19 @@ const HomePage = () => {
     if (userExists) {
       toast.error("User already exits")
     } else {
-      dispatch(addUser(values));
-      toast.success("User added successfully");
+      dispatch(addUser(values)).then(res => {
+        if (res === 201) {
+          toast.success("User added successfully",{ autoClose: 1500 });
+        } else {
+          toast.error("Username exits",{ autoClose: 1500 });
+        }
+      }).catch(err => {
+        console.log(err);
+      })
+
     }
 
-   
+
   };
 
   const onChange = (event) => {

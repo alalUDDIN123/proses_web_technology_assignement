@@ -45,12 +45,12 @@ const UserList = () => {
 
     dispatch(updateUser(id, newValue));
     seEditUser(null);
-    toast.success("User updated success")
+    toast.success("User updated success",{ autoClose: 1500 })
   };
 
   const handleDelete = (id) => {
     dispatch(deleteUser(id));
-    toast.success("User deleted success")
+    toast.success("User deleted success",{ autoClose: 1500 })
   };
 
   useEffect(() => {
@@ -107,6 +107,8 @@ const UserList = () => {
                   <input
                     type="text"
                     value={editMobile}
+                    minLength="10"
+                    maxLength="10"
                     onChange={(e) => setEditMobile(e.target.value)}
                     required
                     className="_edit_input_"
